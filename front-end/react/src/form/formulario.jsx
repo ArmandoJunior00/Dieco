@@ -8,7 +8,7 @@ const Formulario = () => {
     const [email, setemail] = useState('');
     const [senha, setsenha] = useState('');
     const [cpfoucnpj, setcpfoucnpj] = useState('');
-
+    
     return (
         <form className={styles.form}>
             <TextField label="Nome Completo:" value={nome} onChange={(e) => setnome(e.target.value)} fullWidth margin="normal" />
@@ -17,7 +17,9 @@ const Formulario = () => {
             <TextField label="CPF ou CNPJ:" value={cpfoucnpj} onChange={(e) => setcpfoucnpj(e.target.value)} fullWidth margin="normal" />
             <Button variant="contained" color="success" type="submit">INSCREVA-SE</Button>
         </form>
+        
     );
+    
 }
 
 export default Formulario;
