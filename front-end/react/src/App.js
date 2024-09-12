@@ -3,12 +3,15 @@ import './App.css';
 import AppBar from './form/appbar';
 import Formulario from './form/formulario';
 import Logo from './form/logo';
+import Login from './login/login';
+
 function App() {
   return (
     <div className='App'>
-      <AppBar/>
-     <Formulario/>
-     <Logo/>
+      
+      <Logo/>
+      <Login/>
+    
 
     </div>
   );
