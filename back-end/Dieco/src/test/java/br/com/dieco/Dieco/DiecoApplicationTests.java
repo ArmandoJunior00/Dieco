@@ -1,4 +1,4 @@
-package br.com.dieco;
+package br.com.dieco.Dieco;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
