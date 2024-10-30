@@ -11,16 +11,16 @@ const Login = () => {
 
     return (
         <form className={styles.login}>
-            <FaUserCircle />
+            <FaUserCircle className={styles.icon} />
             <TextField label="Username" type="text" value={usuario} onChange={(e) => setusuario(e.target.value)} fullWidth margin="normal" />
-            <RiLockPasswordFill />
-            <TextField label="password" type="password" value={senha} onChange={(e) => setsenha(e.target.value)} fullWidth margin="normal" />
+            <RiLockPasswordFill className={styles.icon} />
+            <TextField label="Password" type="password" value={senha} onChange={(e) => setsenha(e.target.value)} fullWidth margin="normal" />
             <Button variant="contained" color="success" type="submit">Login</Button>
-            <br/>
-            <a href="">Don't Have an Account?</a>
-            <br/>
+            <br />
+            <a className="link"href="">Ainda não tem conta?</a>
+            <br />
             <a href="">Forgot Password</a>
-            
+
         </form>
 
 
